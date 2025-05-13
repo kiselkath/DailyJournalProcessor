@@ -1,13 +1,19 @@
 package org.example;
 
 /**
- * Hello world!
+ * Demo class
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String sentence = new String("Hello Java Team!");
+        System.out.println(sentence.length());
+        sentence = "Hi";
+        System.out.println(sentence.length());
+        String newSentence = sentence.replace("i", "ello");
+        System.out.println(sentence); //"Hi": string is immutable;
+        System.out.println(newSentence);
     }
 }
